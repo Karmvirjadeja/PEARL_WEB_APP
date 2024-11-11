@@ -44,7 +44,7 @@ const Charts = () => {
         const token = localStorage.getItem("token");
 
         const oceanResponse = await axios.get(
-          "http://localhost:3000/api/test/ocean",
+          "https://pearl-web-app.onrender.com/api/test/ocean",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -52,7 +52,7 @@ const Charts = () => {
         setOceanData(oceanResponse.data);
 
         const riasecResponse = await axios.get(
-          "http://localhost:3000/api/test/riasec",
+          "https://pearl-web-app.onrender.com/api/test/riasec",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -60,7 +60,7 @@ const Charts = () => {
         setRiasecData(riasecResponse.data);
 
         const discResponse = await axios.get(
-          "http://localhost:3000/api/test/disc",
+          "https://pearl-web-app.onrender.com/api/test/disc",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -68,7 +68,7 @@ const Charts = () => {
         setDiscData(discResponse.data);
 
         const emotionalIntelligenceResponse = await axios.get(
-          "http://localhost:3000/api/test/emotionalintelligence",
+          "https://pearl-web-app.onrender.com/api/test/emotionalintelligence",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -76,7 +76,7 @@ const Charts = () => {
         setEIData(emotionalIntelligenceResponse.data);
 
         const hireMeResponse = await axios.get(
-          "http://localhost:3000/api/test/hireme",
+          "https://pearl-web-app.onrender.com/api/test/hireme",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -84,7 +84,7 @@ const Charts = () => {
         setHireMeData(hireMeResponse.data);
 
         const mbtiResponse = await axios.get(
-          "http://localhost:3000/api/test/mbti",
+          "https://pearl-web-app.onrender.com/api/test/mbti",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
