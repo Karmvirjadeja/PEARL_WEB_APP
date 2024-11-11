@@ -105,7 +105,7 @@ const RiasecTest = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/test/riasec",
+          "https://pearl-web-app.onrender.com/api/test/riasec",
           formValues,
           {
             headers: {
