@@ -48,7 +48,7 @@ const Login = () => {
         let response;
         if (otpSent) {
           response = await axios.post(
-            "http://localhost:3000/api/auth/verify-otp",
+            "https://pearl-web-app.onrender.com/api/auth/verify-otp",
             { email, otp },
             {
               headers: {
@@ -58,7 +58,7 @@ const Login = () => {
           );
         } else {
           response = await axios.post(
-            "http://localhost:3000/api/auth/login",
+            "https://pearl-web-app.onrender.com/api/auth/login",
             { email, password },
             {
               headers: {
