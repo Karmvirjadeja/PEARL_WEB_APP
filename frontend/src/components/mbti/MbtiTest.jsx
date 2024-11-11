@@ -96,7 +96,7 @@ const MbtiTest = () => {
       const token = localStorage.getItem("token");
       // Submit data to the backend
       const response = await axios.post(
-        "http://localhost:3000/api/test/mbti",
+        "https://pearl-web-app.onrender.com/api/test/mbti",
         formValues,
         {
           headers: {
