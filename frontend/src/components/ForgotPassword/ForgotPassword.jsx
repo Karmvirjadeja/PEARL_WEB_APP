@@ -25,7 +25,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:3000/api/auth/password/forgot`, { email });
+      const response = await axios.post(`https://pearl-web-app.onrender.com/api/auth/password/forgot`, { email });
       console.log("OTP sent:", response.data);
       setOtpSent(true);
       setStep(2);
@@ -45,7 +45,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:3000/api/auth/password/verify-otp`, { email, otp });
+      const response = await axios.post(`https://pearl-web-app.onrender.com/api/auth/password/verify-otp`, { email, otp });
       console.log("OTP verified:", response.data);
       setOtpError(false);
       setStep(3);
@@ -64,7 +64,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      const response = await axios.put(`http://localhost:3000/api/auth/password/reset`, {
+      const response = await axios.put(`https://pearl-web-app.onrender.com/api/auth/password/reset`, {
         email,
         newPassword,
         confirmPassword,
