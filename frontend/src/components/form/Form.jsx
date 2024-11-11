@@ -71,7 +71,7 @@ function Form() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/upload",
+        "https://pearl-web-app.onrender.com/api/auth/upload",
         formData,
         {
           headers: {
@@ -139,7 +139,7 @@ function Form() {
     try {
       // Make POST request to the server
       const response = await axios.post(
-        "http://localhost:3000/api/auth/signup",
+        "https://pearl-web-app.onrender.com/auth/signup",
         userData,
         {
           headers: {
